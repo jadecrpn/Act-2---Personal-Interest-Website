@@ -22,3 +22,11 @@ function selectAccount(accountNumber) {
 }
 
 showNextLetter();
+
+
+function toggleMore() {
+    var moreText = document.getElementById("more-text");
+    var moreBtn = document.getElementById("more-btn");
+    moreText.style.display = moreText.style.display === "none" ? "block" : "none";
+    moreBtn.style.display = moreBtn.style.display === "none" ? "block" : "none";
+}
