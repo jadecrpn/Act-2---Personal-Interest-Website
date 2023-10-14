@@ -6,7 +6,7 @@ Jade - Personal part
 - 3 Movies
 
 Tuazon - Personal part
-3 - movies
+- 3 - movies
 
 Miguel- Personal part
-2 - movies
+- 2 - movies
