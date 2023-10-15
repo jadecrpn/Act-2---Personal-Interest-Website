@@ -3,15 +3,16 @@
 
 body {
     margin: 0;
-    overflow: hidden;
+    overflow: scroll;
     background-color: #000;
 }
 
 
 .Name {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
-  color: white;
+  color: rgb(223, 6, 6);
+  justify-content: right;
 
 }
 
@@ -25,6 +26,7 @@ nav {
   align-items: center;
   height: 17vh;
   width: 100%;
+  gap: 20rem;
  
 }
 
@@ -151,19 +153,11 @@ section {
   }
 
 .title {
-    font-size: 120px;
-    text-transform: uppercase;
-    font-family: "wght" 311;
-    margin-bottom: 'Gambetta', serif; 
-    letter-spacing: -3px;
-    transition: 700ms ease;
-    font-variation-settings: "wght" 311;
-    margin-bottom: 0.8rem;
-    color: PaleGoldenRod;
-    outline: none;
-    text-align: center;
-    
-  }
+    font-size: 50px;
+    color: rgb(254, 254, 254); 
+    text-align: center; 
+    padding-bottom: 10px;  
+}
   
 
 .header {
@@ -228,7 +222,25 @@ section {
     height: auto;
 }
 
-/*  toggle but not working
+.Button-moreinfo{
+    background-color: crimson;
+    color:rgb(24, 11, 11);
+    border-radius: 5px"
+}
+
+
+
+.container-more {
+   justify-content: center;
+    margin-left: 5px;
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+    background-color: transparent;
+    color: white
+}
+
+ /* toggle but not working*/
 .gg-more {
     color: white;
     cursor: pointer;
@@ -241,35 +253,36 @@ section {
 }
 
 .movie-button {
-            text-decoration: none;
-            background-color: #202020;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.2s;
-        }
-        .movie-button:hover {
-            background-color: #252525;
-        }
-        .movie-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .movie-info {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .ratings {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .genre {
-            margin-bottom: 10px;
-        }
-        .cast {
-            font-style: italic;
-        }
+    text-decoration: none;
+    background-color: #202020;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.movie-button:hover {
+    background-color: #f0e7e7;
+}
+.movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.movie-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.genre {
+    margin-bottom: 10px;
+}
+.cast {
+    font-style: italic;
+}
  
   

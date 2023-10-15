@@ -24,9 +24,33 @@ function selectAccount(accountNumber) {
 showNextLetter();
 
 
-function toggleMore() {
+/*function toggleMore() {
     var moreText = document.getElementById("more-text");
     var moreBtn = document.getElementById("more-btn");
     moreText.style.display = moreText.style.display === "none" ? "block" : "none";
     moreBtn.style.display = moreBtn.style.display === "none" ? "block" : "none";
+}*/
+
+function toggleMenu() {
+    const More = document.querySelector(".Button-moreinfo");
+    More.classList.toggle("open");  
 }
+
+/*const card = document.getElementById('content');
+const moreContent = document.getElementById('moreContent');
+const toggleButton = document.getElementById('Button-moreinfo');
+
+let isShowMore = false;
+
+toggleButton.addEventListener('click', () => {
+  isShowMore = !isShowMore;
+  
+  if (isShowMore) {
+    moreContent.style.display = 'block';
+    toggleButton.textContent = 'Read Less';
+  } else {
+    moreContent.style.display = 'none';
+    toggleButton.textContent = 'Read More';
+  }
+});*/
+
