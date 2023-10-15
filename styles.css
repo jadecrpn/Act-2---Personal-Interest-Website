@@ -228,6 +228,7 @@ section {
     height: auto;
 }
 
+/*  toggle but not working
 .gg-more {
     color: white;
     cursor: pointer;
@@ -237,6 +238,7 @@ section {
 .gg-more:hover {
     color: red;
     transition: color 0.3s ease-in-out;
-}  
+}
+
  
   
