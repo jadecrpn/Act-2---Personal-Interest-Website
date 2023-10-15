@@ -29,7 +29,7 @@ showNextLetter();
     var moreBtn = document.getElementById("more-btn");
     moreText.style.display = moreText.style.display === "none" ? "block" : "none";
     moreBtn.style.display = moreBtn.style.display === "none" ? "block" : "none";
-}*/
+}
 
 function toggleMenu() {
     const More = document.querySelector(".Button-moreinfo");
@@ -53,4 +53,45 @@ toggleButton.addEventListener('click', () => {
     toggleButton.textContent = 'Read More';
   }
 });*/
+
+function toggleMenu() {
+ 
+    // Get all the elements from the page
+    const points = document.getElementById("text-container");
+    const showMoreText = document.getElementById("container-more");
+    const buttonText = document.getElementById("Buttton-moreinfo");
+
+
+
+    if (points.style.display === "none") {
+ 
+        // Hide the text between the span
+        // elements
+        showMoreText.style.display = "none";
+
+        // Show the dots after the text
+        points.style.display = "inline";
+
+        // Change the text on button to 
+        // 'Show More'
+        buttonText.innerHTML = "Show More";
+    }
+
+    // If the hidden portion is revealed,
+    // we will change it back to be hidden
+    else {
+
+        // Show the text between the
+        // span elements
+        showMoreText.style.display = "inline";
+
+        // Hide the dots after the text
+        points.style.display = "none";
+
+        // Change the text on button
+        // to 'Show Less'
+        buttonText.innerHTML = "Show Less";
+    }
+}
+
 
