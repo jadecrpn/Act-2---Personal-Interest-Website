@@ -240,5 +240,36 @@ section {
     transition: color 0.3s ease-in-out;
 }
 
+.movie-button {
+            text-decoration: none;
+            background-color: #202020;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.2s;
+        }
+        .movie-button:hover {
+            background-color: #252525;
+        }
+        .movie-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .movie-info {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .ratings {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .genre {
+            margin-bottom: 10px;
+        }
+        .cast {
+            font-style: italic;
+        }
  
   
