@@ -7,7 +7,7 @@ function showNextLetter() {
     if (index <= text.length) {
         textElement.textContent = text.slice(0, index);
         index++;
-        setTimeout(showNextLetter, 200);
+        setTimeout(showNextLetter, 1000);
     } else {
         // Show the login form when the animation is complete
         const intro = document.getElementById('introduction');
@@ -36,6 +36,13 @@ function toggleMenu(button) {
     }
 }
 
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (!isChrome){
+    $('#iframeAudio').remove()
+}
+else {
+    $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+}
 
 
 
