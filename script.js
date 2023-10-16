@@ -77,7 +77,7 @@ function toggleMenu() {
     }
 }*/
 
-function toggleMenu(button) {
+/*function toggleMenu(button) {
  
     // Get all the elements from the page
     const points = button.parentElement.querySelector("text-container");
@@ -113,6 +113,22 @@ function toggleMenu(button) {
         // Change the text on button
         // to 'Show Less'
         buttonText.innerHTML = "Show Less";
+    }
+}*/
+
+function toggleMenu(button) {
+    const textContainer = button.parentElement.querySelector('.text-container');
+    const containerMore = button.parentElement.querySelector('.container-more');
+    const buttonText = button;
+
+    if (textContainer.style.display === "none" || textContainer.style.display === "") {
+        containerMore.style.display = "none";
+        textContainer.style.display = "inline";
+        buttonText.textContent = "Show More";
+    } else {
+        containerMore.style.display = "inline";
+        textContainer.style.display = "none";
+        buttonText.textContent = "Show Less";
     }
 }
 
