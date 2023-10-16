@@ -45,7 +45,7 @@ nav {
 }
 
 
-.content {
+.content-intro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,18 +185,23 @@ section {
     text-align: left;
     font-family: 'Bebas Neue', sans-serif;
 }
+
 .content {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    margin-top: 20px;
+    margin-top: 5px;
+    height: 100%;
+    font-family: system-ui;
 }
+
+
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     transition: transform 0.3s ease-in-out;
 }
 .image-container:hover{
@@ -223,15 +228,20 @@ section {
 }
 
 .Button-moreinfo{
-    background-color: crimson;
+    background-color: rgba(243, 239, 240, 0.951);
     color:rgb(24, 11, 11);
-    border-radius: 5px"
+    width: 8rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
 }
 
 
 
 .container-more {
-   justify-content: center;
+    display: none;
+    justify-content: center;
     margin-left: 5px;
     padding: 20px;
     width: 400px;
