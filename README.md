@@ -1,12 +1,20 @@
 # Act-2---Personal-Interest-Website
 
-Malic - Introduction & Select Account
-
-Jade - Personal part
+Malic 
+- Personal Part
+- Introduction & Select Account
 - 3 Movies
 
-Tuazon - Personal part
-- 3 - movies
+Jade 
+- Personal part
+- 3 Movies
+- Contact Section
 
-Miguel- Personal part
-- 2 - movies
+Tuazon 
+- Personal part
+- 3 - movies
+- Content Section
+
+Miguel
+- Personal part
+- 3 - movies
