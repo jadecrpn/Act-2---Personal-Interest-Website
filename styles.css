@@ -72,7 +72,8 @@ nav {
 
 
 section {
-    height: 100vh;
+    height: auto;
+    padding-bottom: 20%;
     box-sizing: border-box;  
   }
 
@@ -263,17 +264,7 @@ section {
 }
 
 
- /* toggle but not working*/
-.gg-more {
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
-}
 
-.gg-more:hover {
-    color: red;
-    transition: color 0.3s ease-in-out;
-}
 
 .movie-button {
     text-decoration: none;
