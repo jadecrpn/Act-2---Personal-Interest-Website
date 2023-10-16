@@ -17,4 +17,10 @@ Tuazon
 
 Miguel
 - Personal part
-- 3 - movies
+- 3 movies
+
+
+Unfinished Task 
+- Responsive
+- Button "View More" 
+- Design
