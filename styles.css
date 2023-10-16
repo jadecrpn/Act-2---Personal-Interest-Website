@@ -3,8 +3,8 @@
 
 body {
     margin: 0;
-    overflow: scroll;
     background-color: #000;
+    overflow: scroll;
 }
 
 
@@ -75,7 +75,7 @@ section {
     height: auto;
     padding-bottom: 20%;
     box-sizing: border-box;  
-  }
+}
 
 #whoIsWatching {
     width: 100vw;
@@ -216,7 +216,7 @@ section {
     margin-left: 5px;
     padding: 20px;
     width: 400px;
-    height: 150px;
+    height:auto;
 }
 
 .text-container p{
