@@ -2,9 +2,10 @@
 
 
 body {
-    margin: 0;
+    margin: auto 0;
     background-color: #000;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -240,7 +241,6 @@ section {
 }
 
 
-
 .container-more {
     display: none;
     justify-content: center;
@@ -257,7 +257,7 @@ section {
     justify-content: center;
     margin-left: 5px;
     padding: 20px;
-    width: 400px;
+    width: 40px;
     height: 150px;
     background-color: transparent;
     color: white
@@ -302,6 +302,48 @@ section {
     font-style: italic;
 }
 
+
+
+/* Contact Section */
+
+
+.contact-info-upper-container{
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-info-container  a {
+    color: rgb(13, 13, 13);
+    background-color: rgb(255, 248, 248);
+    border: 3px solid;
+    border-color: rgb(232, 30, 30);;
+    width: 8rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+}
+
+
+.contact-info-container  p {
+    text-align: center;
+    color: white;
+    padding-bottom: 50%;
+   }
+
+.contact-img{
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: rgb(226, 14, 14);
+    transform: scale(0.5);
+    overflow: hidden;
+    height: 250px;
+    width : 250px;
+}
 
  
   
