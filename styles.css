@@ -12,7 +12,6 @@ body {
   font-weight: bold;
   color: rgb(223, 6, 6);
   justify-content: right;
-
 }
 
 nav,
@@ -72,10 +71,10 @@ nav {
 
 
 section {
+    /*max-height: 1000px;*/
     height: auto;
     padding-bottom: 20%;
-    box-sizing: border-box;  
-    overflow: scroll;
+    box-sizing: border-box;     
     overflow-x: hidden;
 }
 
@@ -208,6 +207,7 @@ section {
     margin-bottom: 5px;
     transition: transform 0.3s ease-in-out;
 }
+
 .image-container:hover{
     transform: scale(1.1);
 }
@@ -229,6 +229,7 @@ section {
 .img-container {
     width: 300px;
     height: auto;
+    padding-top: 20%;
 }
 
 .Button-moreinfo{
@@ -253,20 +254,6 @@ section {
     background-color: transparent;
     color: white
 }
-
-.container-more {
-    display: none;
-    justify-content: center;
-    margin-left: 5px;
-    padding: 20px;
-    width: 40px;
-    height: 150px;
-    background-color: transparent;
-    color: white
-}
-
-
-
 
 .movie-button {
     text-decoration: none;
@@ -347,11 +334,19 @@ section {
     width : 250px;
 }
 
+/* Corpin Movie Content 
+#austine_movies {
+    overscroll-behavior-block: contain;
+}*/
+
+
+
+
 
 /* Corpin Movie Content */
 #anne,
 #papertown,
-#notebook{
+#threeidiots {
     display: none;
 }
 

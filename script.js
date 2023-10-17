@@ -20,31 +20,19 @@ showNextLetter();
 
 
 
-/*function toggleMenu(button) {
-    const textContainer = button.parentElement.querySelector('.text-container');
-    const containerMore = button.parentElement.querySelector('.container-more');
-    const buttonText = button;
-
-    if (textContainer.style.display === "none" || textContainer.style.display === "") {
-        containerMore.style.display = "none";
-        textContainer.style.display = "inline";
-        buttonText.textContent = "Show More";
-    } else {
-        containerMore.style.display = "inline";
-        textContainer.style.display = "none";
-        buttonText.textContent = "Show Less";
-    }
-}*/
-
 function toggleContent(button) {
     const contentId = button.getAttribute("data-toggle");
     const content = document.getElementById(contentId);
+    const containers = document.getElementById("text-container");
+
 
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
+        /*containers.style.display = "none"; /*if you want to  on and off the content */
         button.innerText = "Read Less";
     } else {
         content.style.display = "none";
+        /*containers.style.display = "block";  /*if you want to  on and off the content  */
         button.innerText = "Read More";
     }
 }
