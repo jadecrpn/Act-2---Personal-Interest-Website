@@ -7,7 +7,7 @@ function showNextLetter() {
     if (index <= text.length) {
         textElement.textContent = text.slice(0, index);
         index++;
-        setTimeout(showNextLetter, 1000);
+        setTimeout(showNextLetter, 200);
     } else {
         // Show the login form when the animation is complete
         const intro = document.getElementById('introduction');
