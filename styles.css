@@ -4,8 +4,6 @@
 body {
     margin: auto 0;
     background-color: #000;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 
@@ -77,6 +75,8 @@ section {
     height: auto;
     padding-bottom: 20%;
     box-sizing: border-box;  
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 #whoIsWatching {
