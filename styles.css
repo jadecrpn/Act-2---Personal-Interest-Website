@@ -347,5 +347,20 @@ section {
     width : 250px;
 }
 
+
+/* Austine Movie Content */
+#shutterIslandContent,
+#exorcistContent,
+#fightClubContent {
+    display: none;
+}
+
+
+/* Tuazon Movie Content */
+#loveatfirstsight,
+#mebeforeyou,
+#threeidiots {
+    display: none;
+}
  
   
