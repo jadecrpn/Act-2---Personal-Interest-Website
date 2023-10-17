@@ -184,9 +184,10 @@ section {
 }
 
 .text-container h3{
-    color: whitesmoke;
+    color: rgb(255, 0, 0);
     text-align: left;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
 }
 
 .content {
