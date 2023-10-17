@@ -348,6 +348,14 @@ section {
 }
 
 
+/* Corpin Movie Content */
+#anne,
+#papertown,
+#notebook{
+    display: none;
+}
+
+
 /* Austine Movie Content */
 #shutterIslandContent,
 #exorcistContent,
@@ -362,5 +370,7 @@ section {
 #threeidiots {
     display: none;
 }
+
+
  
   
