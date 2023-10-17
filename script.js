@@ -20,7 +20,7 @@ showNextLetter();
 
 
 
-function toggleMenu(button) {
+/*function toggleMenu(button) {
     const textContainer = button.parentElement.querySelector('.text-container');
     const containerMore = button.parentElement.querySelector('.container-more');
     const buttonText = button;
@@ -34,9 +34,20 @@ function toggleMenu(button) {
         textContainer.style.display = "none";
         buttonText.textContent = "Show Less";
     }
+}*/
+
+function toggleContent(button) {
+    const contentId = button.getAttribute("data-toggle");
+    const content = document.getElementById(contentId);
+
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        button.innerText = "Read Less";
+    } else {
+        content.style.display = "none";
+        button.innerText = "Read More";
+    }
 }
-
-
 
 
 

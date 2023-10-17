@@ -12,6 +12,10 @@
         <div class="intro-container">
             <div class="content-intro">
                 <h1 class="intro-text" id="intro-text"> W </h1>
+                <audio autoplay>
+                    <source src="Assets/Netflix Intro.mp3" type="audio/mpeg">
+                    </audio>
+                    
             </div>
         </div>
     </section>
@@ -66,7 +70,7 @@
                 </p>
                 </span>
 
-                <span id="container-more">
+                <span id="shutterIslandContent">
                     <h1 class = "movie-title">Shutter Island</h1>
                     <p class = "movie-info">Release Year: 2010</p>
                     <div class="ratings">
@@ -77,13 +81,14 @@
                     <p class="cast">Director: Martin Scorsese</p>
                     <p class="cast">Cast: Leonardo DiCaprio, Mark Ruffalo</p>
                     </span><br>
-
-                 <button class = "Button-moreinfo" id = "Button-moreinfo" onclick="toggleMenu()">More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="shutterIslandContent" 
+                    onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
             
-        <div class="content">
+        <div class="content" >
             <div class="image-container">
                 <img src="assets/The exorcist.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
@@ -104,7 +109,7 @@
                 </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="exorcistContent">
                     <h1 class = "movie-title">The Exorcist</h1>
                     <p class = "movie-info">Release Year: 1973</p>
                     <div class="ratings">
@@ -115,18 +120,19 @@
                     <p class="cast">Director: William Friedkin</p>
                     <p class="cast">Cast: Linda Blair, Ellen Burnstyn, Max von Sydow</p>
                 </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>
+                <button class = "Button-moreinfo"  
+                data-toggle="exorcistContent" 
+                onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" >
             <div class="image-container">
                 <img src="assets/fight-club.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
             <div class="text-container">
-                <span id="text-container">
+                <span id="text-container" >
                 <h3>Fight Club</h3>
                 <p>The movie follows an insomniac narrator who forms an underground fight club with the charismatic and anarchic Tyler Durden. 
                    The club soon evolves into an anarchic project, leading to an underground revolution against consumerism and societal norms. 
@@ -141,7 +147,7 @@
                 </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="fightClubContent"">
                     <h1 class = "movie-title">Fight Club</h1>
                     <p class = "movie-info">Release Year: 1999</p>
                     <div class="ratings">
@@ -152,7 +158,9 @@
                     <p class="cast">Director:David Fincher</p>
                     <p class="cast">Cast: Edward Norton and Brad Pitt</p>
                 </span><br>
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>      
+                    <button class = "Button-moreinfo"  
+                            data-toggle="fightClubContent" 
+                            onclick="toggleContent(this)">Read More</button>     
                 </div>
             </div>
         </div>
@@ -192,7 +200,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="loveatfirstsight">
                     <h1 class = "movie-title">LOVE AT FIRST SIGHT</h1>
                     <p class = "movie-info">Release Year: 2023</p>
                     <div class="ratings">
@@ -202,8 +210,10 @@
                     <p class="genre">Genre: Romantic, Drama</p>
                     <p class="cast">Cast: Haley Lu Richardson, Ben Hardy, Jameela jamil</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="loveatfirstsight" 
+                    onclick="toggleContent(this)">Read More</button>
+                
                 </div>
             </div>
         </div>
@@ -227,7 +237,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="mebeforeyou">
                     <h1 class = "movie-title">ME BEFORE YOU</h1>
                     <p class="movie-info">Release Year: 2016</p>
                     <div class="ratings">
@@ -236,9 +246,11 @@
                     </div>
                     <p class="genre">Genre: Romantic, Drama</p>
                     <p class="cast">Cast: Sam Claflin, Emilia Clarke, Matthew Lewis</p>
-                </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="mebeforeyou" 
+                    onclick="toggleContent(this)">Read More</button>
+                
                 </div>
             </div>
         </div>
@@ -260,7 +272,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="threeidiots">
                     <h1 class = "movie-title">Three Idiots</h1>
                     <p class = "movie-info" >Release Year: 2009</p>
                     <div class="ratings">
@@ -269,9 +281,11 @@
                     </div>
                     <p class="genre">Genre: Comedy, Drama</p>
                     <p class="cast">Cast: Aamir Khan,R. Madhavan, Sharman Joshi</p>
-                </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()">More Info</button>      
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="threeidiots" 
+                    onclick="toggleContent(this)">Read More</button>
+                
                 </div>
             </div>
         </div>
@@ -314,7 +328,7 @@
                     stunning visuals make it a captivating and inspiring series that I can't get enough of. 
                 </p>
                 </span>
-                    <span id="container-more">
+                    <span id="anne">
                     <h1 class = "movie-title">Anne with an E</h1>
                     <p class = "movie-info">Release Year: 2017-2019</p>
                     <div class="ratings">
@@ -325,8 +339,9 @@
                     <p class="cast">Director: Moira Walley-Beckett</p>
                     <p class="cast">Cast: Amybeth McNulty, Geraldine James, R.H. Thomson</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="anne" 
+                    onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
@@ -407,6 +422,116 @@
             </div>
         </div>
     </section>
+
+    <section id="miguel_movies">
+        <nav id = "desktop-nav">
+            <div class = "Name"> Miguel </div>
+            <div>
+                <ul class ="nav-links">
+                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#contact"> Contacts </a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
+
+        <div class="content">
+            <div class="image-container">
+                <img src="Assets/Interstellar-2014.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                    <h3>Interstellar</h3>
+                    <p>
+                        "Interstellar is about Earth's last chance to locate a habitable planet 
+                         before the human race becomes extinct due to a lack of resources. 
+                         Cooper (Matthew McConaughey) is the film's protagonist, a former NASA 
+                         pilot entrusted with leading a mission through a wormhole to 
+                         find a livable planet in another galaxy.</p>
+                    <p>In my personal life, it applies with the idea of courage and sacrifice
+                        Aren't we all do that. we sacrifice for people we cherish and love.
+                    </p>
+                </span>
+                <span id="container-more">
+                    <h1>Interstellar</h1>
+                    <p>Release Year: 2014</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.7</span>
+                        <span> 87%</span>
+                    </div>
+                    <p class="genre">Genre: adventure, drama, sci-fi</p>
+                    <p class="cast">Cast: Matthew McConaughey, Anne Hathaway, Timothée Chalamet</p>
+                </span>
+                <button class="Button-moreinfo" onclick="toggleMenu(this)">More Info</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+        <div class="image-container">
+            <img src="Assets/Hustle_(2022_film).jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+        </div>
+        <div class="text-container">
+            <span id="text-container">
+                <h3>Hustle</h3>
+                <p>"While in Spain, a basketball scout discovers a superb street ball player and 
+                    sees the prospect as his chance to return to the NBA. While in Spain, a basketball 
+                    scout discovers a superb street ball player and sees the prospect as his chance 
+                    to return to the NBA.</p>
+                <p>In my personal life, it applies with the idea of how desparation is a good 
+                    thing at some point. We deliverately do things to achieve what we want.
+                </p>
+            </span>
+            <span id="container-more">
+                <h1>Hustle</h1>
+                <p>Release Year: 2022</p>
+                <div class="ratings">
+                    <span>IMDb: 7.3</span>
+                    <span> 74%</span>
+                </div>
+                <p class="genre">Genre: comedy, drama, sport</p>
+                <p class="cast">Cast: Adam Sandler, Juancho Hernangomez, Anthony Edwards</p>
+            </span>
+            <button class="Button-moreinfo" onclick="toggleMenu(this)">More Info</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content">
+    <div class="image-container">
+        <img src="Assets/A Man Called Otto (2022).jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+    </div>
+    <div class="text-container">
+        <span id="text-container">
+            <h3>A Man Called Otto</h3>
+            <p>"A Man Called Otto is a 2022 American comedy-drama film directed by Marc Forster 
+                and written by David Magee about a cantankerous elderly man who reluctantly becomes 
+                engaged in the lives of his neighbors. It stars Tom Hanks in the lead role, with Mariana Trevio, 
+                Rachel Keller, and Manuel Garcia-Rulfo filling out the cast.</p>
+            <p>This reflects real life by emphasizing the importance of learning
+               from experiences and by not criticizing another person without knowing
+               the reason behind their doings.
+            </p>
+        </span>
+        <span id="container-more">
+            <h1>A Man Called Otto</h1>
+            <p>Release Year: 2022</p>
+            <div class="ratings">
+                <span>IMDb: 7.5%</span>
+                <span> 75%</span>
+            </div>
+            <p class="genre">Genre: drama, comedy</p>
+            <p class="cast">Cast: Tom Hanks, Rachel Keller, Mariana Treviño</p>
+        </span>
+        <button class="Button-moreinfo" onclick="toggleMenu(this)">More Info</button>
+    </div>
+</div>
+</div>
+
+
+
+    </section>
+
     
     <section id="contact">
               <div class="contact-info-upper-container">

@@ -4,8 +4,6 @@
 body {
     margin: auto 0;
     background-color: #000;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 
@@ -30,6 +28,7 @@ nav {
   gap: 20rem;
  
 }
+
 
 .nav-links {
   gap: 2rem;
@@ -76,6 +75,8 @@ section {
     height: auto;
     padding-bottom: 20%;
     box-sizing: border-box;  
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 #whoIsWatching {
@@ -183,9 +184,10 @@ section {
 }
 
 .text-container h3{
-    color: whitesmoke;
+    color: rgb(255, 0, 0);
     text-align: left;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
 }
 
 .content {
@@ -345,5 +347,20 @@ section {
     width : 250px;
 }
 
+
+/* Austine Movie Content */
+#shutterIslandContent,
+#exorcistContent,
+#fightClubContent {
+    display: none;
+}
+
+
+/* Tuazon Movie Content */
+#loveatfirstsight,
+#mebeforeyou,
+#threeidiots {
+    display: none;
+}
  
   
