@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Personal Interest and Hobbies</title>
 </head>
 <body>
@@ -12,6 +13,10 @@
         <div class="intro-container">
             <div class="content-intro">
                 <h1 class="intro-text" id="intro-text"> W </h1>
+                <audio autoplay>
+                    <source src="Assets/Netflix Intro.mp3" type="audio/mpeg">
+                    </audio>
+                    
             </div>
         </div>
     </section>
@@ -66,7 +71,7 @@
                 </p>
                 </span>
 
-                <span id="container-more">
+                <span id="shutterIslandContent">
                     <h1 class = "movie-title">Shutter Island</h1>
                     <p class = "movie-info">Release Year: 2010</p>
                     <div class="ratings">
@@ -77,13 +82,14 @@
                     <p class="cast">Director: Martin Scorsese</p>
                     <p class="cast">Cast: Leonardo DiCaprio, Mark Ruffalo</p>
                     </span><br>
-
-                 <button class = "Button-moreinfo" id = "Button-moreinfo" onclick="toggleMenu()">More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="shutterIslandContent" 
+                    onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
             
-        <div class="content">
+        <div class="content" >
             <div class="image-container">
                 <img src="assets/The exorcist.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
@@ -104,7 +110,7 @@
                 </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="exorcistContent">
                     <h1 class = "movie-title">The Exorcist</h1>
                     <p class = "movie-info">Release Year: 1973</p>
                     <div class="ratings">
@@ -115,18 +121,19 @@
                     <p class="cast">Director: William Friedkin</p>
                     <p class="cast">Cast: Linda Blair, Ellen Burnstyn, Max von Sydow</p>
                 </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>
+                <button class = "Button-moreinfo"  
+                data-toggle="exorcistContent" 
+                onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" >
             <div class="image-container">
                 <img src="assets/fight-club.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
             <div class="text-container">
-                <span id="text-container">
+                <span id="text-container" >
                 <h3>Fight Club</h3>
                 <p>The movie follows an insomniac narrator who forms an underground fight club with the charismatic and anarchic Tyler Durden. 
                    The club soon evolves into an anarchic project, leading to an underground revolution against consumerism and societal norms. 
@@ -141,7 +148,7 @@
                 </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="fightClubContent"">
                     <h1 class = "movie-title">Fight Club</h1>
                     <p class = "movie-info">Release Year: 1999</p>
                     <div class="ratings">
@@ -152,7 +159,9 @@
                     <p class="cast">Director:David Fincher</p>
                     <p class="cast">Cast: Edward Norton and Brad Pitt</p>
                 </span><br>
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>      
+                    <button class = "Button-moreinfo"  
+                            data-toggle="fightClubContent" 
+                            onclick="toggleContent(this)">Read More</button>     
                 </div>
             </div>
         </div>
@@ -192,7 +201,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="loveatfirstsight">
                     <h1 class = "movie-title">LOVE AT FIRST SIGHT</h1>
                     <p class = "movie-info">Release Year: 2023</p>
                     <div class="ratings">
@@ -202,8 +211,10 @@
                     <p class="genre">Genre: Romantic, Drama</p>
                     <p class="cast">Cast: Haley Lu Richardson, Ben Hardy, Jameela jamil</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="loveatfirstsight" 
+                    onclick="toggleContent(this)">Read More</button>
+                
                 </div>
             </div>
         </div>
@@ -227,7 +238,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="mebeforeyou">
                     <h1 class = "movie-title">ME BEFORE YOU</h1>
                     <p class="movie-info">Release Year: 2016</p>
                     <div class="ratings">
@@ -236,9 +247,11 @@
                     </div>
                     <p class="genre">Genre: Romantic, Drama</p>
                     <p class="cast">Cast: Sam Claflin, Emilia Clarke, Matthew Lewis</p>
-                </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="mebeforeyou" 
+                    onclick="toggleContent(this)">Read More</button>
+                
                 </div>
             </div>
         </div>
@@ -260,7 +273,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="threeidiots">
                     <h1 class = "movie-title">Three Idiots</h1>
                     <p class = "movie-info" >Release Year: 2009</p>
                     <div class="ratings">
@@ -269,9 +282,11 @@
                     </div>
                     <p class="genre">Genre: Comedy, Drama</p>
                     <p class="cast">Cast: Aamir Khan,R. Madhavan, Sharman Joshi</p>
-                </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()">More Info</button>      
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="threeidiots" 
+                    onclick="toggleContent(this)">Read More</button>
+                
                 </div>
             </div>
         </div>
@@ -314,7 +329,7 @@
                     stunning visuals make it a captivating and inspiring series that I can't get enough of. 
                 </p>
                 </span>
-                    <span id="container-more">
+                    <span id="anne">
                     <h1 class = "movie-title">Anne with an E</h1>
                     <p class = "movie-info">Release Year: 2017-2019</p>
                     <div class="ratings">
@@ -325,8 +340,9 @@
                     <p class="cast">Director: Moira Walley-Beckett</p>
                     <p class="cast">Cast: Amybeth McNulty, Geraldine James, R.H. Thomson</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="anne" 
+                    onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
@@ -350,7 +366,7 @@
                     It's a brilliant blend of wit, wisdom, and relatability that keeps me coming back for more.
                 </p>
                 </span>
-                    <span id="container-more">
+                    <span id="papertown">
                     <h1 class = "movie-title">Paper Towns</h1>
                     <p class = "movie-info">Release Year: 2015</p>
                     <div class="ratings">
@@ -361,8 +377,9 @@
                     <p class="cast">Director: Jake Schreier</p>
                     <p class="cast">Cast: Nat Wolff, Cara Delevingne, Austin Abrams</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="papertown" 
+                    onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>
@@ -390,7 +407,7 @@
                    even in the face of adversity.
                 </p>
                 </span>
-                    <span id="container-more">
+                    <span id="notebook">
                     <h1 class = "movie-title">The Notebook</h1>
                     <p class = "movie-info">Release Year: 2004</p>
                     <div class="ratings">
@@ -401,8 +418,9 @@
                     <p class="cast">Director: Nick Cassavetesr</p>
                     <p class="cast">Cast: Gena Rowlands, James Garner, Rachel McAdams</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="notebook" 
+                    onclick="toggleContent(this)">Read More</button> 
                 </div>
             </div>
         </div>

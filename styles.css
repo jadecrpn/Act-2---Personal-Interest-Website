@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap");
 
 body {
+
   margin: auto 0;
   background-color: #000;
   overflow: scroll;
   overflow-x: hidden;
+
+    margin: auto 0;
+    background-color: #000;
+
 }
 
 .Name {
@@ -26,6 +31,7 @@ nav {
   width: 100%;
   gap: 20rem;
 }
+
 
 .nav-links {
   gap: 2rem;
@@ -66,9 +72,17 @@ nav {
 }
 
 section {
+
   height: auto;
   padding-bottom: 20%;
   box-sizing: border-box;
+
+    /*max-height: 1000px;*/
+    height: auto;
+    padding-bottom: 20%;
+    box-sizing: border-box;     
+    overflow-x: hidden;
+
 }
 
 #whoIsWatching {
@@ -172,10 +186,18 @@ section {
   color: whitesmoke;
 }
 
+
 .text-container h3 {
   color: whitesmoke;
   text-align: left;
   font-family: "Bebas Neue", sans-serif;
+
+.text-container h3{
+    color: rgb(255, 0, 0);
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+
 }
 
 .content {
@@ -195,8 +217,14 @@ section {
   margin-bottom: 5px;
   transition: transform 0.3s ease-in-out;
 }
+
 .image-container:hover {
   transform: scale(1.1);
+
+
+.image-container:hover{
+    transform: scale(1.1);
+
 }
 
 .text-container {
@@ -214,8 +242,14 @@ section {
 }
 
 .img-container {
+
   width: 300px;
   height: auto;
+
+    width: 300px;
+    height: auto;
+    padding-top: 20%;
+
 }
 
 .Button-moreinfo {
@@ -227,6 +261,7 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
 }
+
 
 .container-more {
   display: none;
@@ -249,6 +284,8 @@ section {
   background-color: transparent;
   color: white;
 }
+
+
 
 .movie-button {
   text-decoration: none;
@@ -315,6 +352,7 @@ section {
   padding-bottom: 50%;
 }
 
+
 .contact-img {
   border-radius: 50%;
   border: 5px solid;
@@ -324,3 +362,34 @@ section {
   height: 250px;
   width: 250px;
 }
+
+/* Corpin Movie Content 
+#austine_movies {
+    overscroll-behavior-block: contain;
+}*/
+
+
+/* Corpin Movie Content */
+#anne,
+#papertown,
+#notebook {
+    display: none;
+}
+
+
+/* Austine Movie Content */
+#shutterIslandContent,
+#exorcistContent,
+#fightClubContent {
+    display: none;
+}
+
+
+/* Tuazon Movie Content */
+#loveatfirstsight,
+#mebeforeyou,
+#threeidiots {
+    display: none;
+}
+
+
