@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 600px) {
 
-   
+ 
     .intro-text {
         font-size: 6rem; /* Adjust the font size for the intro text */
     }
@@ -96,26 +96,28 @@
     }
     .Name {
         font-size: 3rem; /* Reduce the font size for the name */
-        padding-left: 30%;
+        padding-left: 5%;
     }
 
     .title{
         font-size: 30px;
     }
 
-    .nav-links a {
-        gap: 0.5rem; /* Reduce the gap between navigation items */
-        padding-right: 50%;
-        color: rgb(253, 255, 255) ;
-        
-    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
 
+    .nav-links a {
+        gap: 0.3rem; /* Reduce the gap between navigation items */
+        color: rgb(253, 255, 255) ;
+    }
     .main-div h1 {
         font-size: 2.5rem; /* Further reduce the font size for h1 */
         padding-top: 40%;
         
     }
- 
     .logo-section {
         flex-direction: row; 
         flex-wrap: wrap;

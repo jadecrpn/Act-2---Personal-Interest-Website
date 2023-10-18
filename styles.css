@@ -14,6 +14,7 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 
+
 nav,
 .nav-links {
   display: flex;
@@ -27,11 +28,29 @@ nav {
   gap: 20rem;
 }
 
-.nav-links {
+.nav-links  {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  
 }
+
+a{
+  color: rgb(253, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+
 
 .intro-container {
   position: relative;
@@ -41,52 +60,43 @@ nav {
 }
 
 #home_pic {
-    width: 100%;
+    width: auto;
     height: 100vh; /* Set the height to 100vh for full viewport height */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.bg-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/home bg.png');
-    background-size: cover; /* Adjust to control how the image covers the container */
-    background-position: center center; /* Adjust to control the image position */
-    opacity: 0; /* Initially set to invisible */
-}
-
-.bg-container {
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/home bg.png');
+    background-image: url("Assets/Netflix Bg.png");
     background-size: cover;
     background-position: center center;
-    opacity: 0;
+    position: relative;
 }
 
 .centered-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-button {
+
+#home_pic button {
     background-color:red;
-    color: #fff;
-    padding: 20px 40px;
+    padding: 20px 40px ;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    font-family: "Bebas Neue", sans-serif;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
+button a{
+  color: #efebeb;
+  font-family: "Bebas Neue", sans-serif;
+}
+
 
 
 [data-aos="fade-in"] {
@@ -131,8 +141,6 @@ section {
   min-height: 100vh;
   background-color: #141414;
 }
-
-
 
 .logo-section {
   width: 95vw;
