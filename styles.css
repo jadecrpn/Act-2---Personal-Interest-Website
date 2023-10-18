@@ -7,10 +7,11 @@ body {
 }
 
 .Name {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: bold;
   color: rgb(223, 6, 6);
   justify-content: right;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 nav,
