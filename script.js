@@ -42,10 +42,10 @@ function toggleContent(button) {
 
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
-        button.innerText = "Read Less";
+        button.innerText = "Less";
     } else {
         content.style.display = "none";
-        button.innerText = "Read More";
+        button.innerText = "More";
     }
 }
 
