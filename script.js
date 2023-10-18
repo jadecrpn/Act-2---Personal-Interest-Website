@@ -29,11 +29,11 @@ function toggleContent(button) {
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         /*containers.style.display = "none"; /*if you want to  on and off the content */
-        button.innerText = "Read Less";
+        button.innerText = "Less";
     } else {
         content.style.display = "none";
         /*containers.style.display = "block";  /*if you want to  on and off the content  */
-        button.innerText = "Read More";
+        button.innerText = "More";
     }
 }
 
