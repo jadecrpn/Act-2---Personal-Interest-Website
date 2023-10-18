@@ -58,6 +58,36 @@ nav {
     opacity: 0; /* Initially set to invisible */
 }
 
+.bg-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/home bg.png');
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+}
+
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+button {
+    background-color:red;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 5px;
+    
+}
+
+
 [data-aos="fade-in"] {
     opacity: 1; /* This will make the background image fade in when it enters the viewport */
 }
