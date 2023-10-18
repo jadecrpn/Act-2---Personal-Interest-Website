@@ -58,6 +58,9 @@ nav {
     opacity: 0; /* Initially set to invisible */
 }
 
+[data-aos="fade-in"] {
+    opacity: 1; /* This will make the background image fade in when it enters the viewport */
+}
 
 .content-intro {
   display: flex;
