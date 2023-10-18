@@ -68,7 +68,11 @@
         font-size: 30px; /* Reduce font size for h2 within the header */
         text-align: center; /* Adjust alignment for h2 within the header */
     }
-
+    
+    .text-container h3 {
+        text-align: center;
+    }
+    
     .movie-button {
         padding: 10px; /* Further adjust the button padding */
     }
@@ -82,16 +86,28 @@
 
 @media screen and (max-width: 600px) {
 
-
+   
     .intro-text {
         font-size: 6rem; /* Adjust the font size for the intro text */
     }
+
+    #desktop-nav{
+      justify-content: space-around;
+    }
     .Name {
-        font-size: 2rem; /* Reduce the font size for the name */
+        font-size: 3rem; /* Reduce the font size for the name */
+        padding-left: 30%;
     }
 
-    .nav-links {
-        gap: 1rem; /* Reduce the gap between navigation items */
+    .title{
+        font-size: 30px;
+    }
+
+    .nav-links a {
+        gap: 0.5rem; /* Reduce the gap between navigation items */
+        padding-right: 50%;
+        color: rgb(253, 255, 255) ;
+        
     }
 
     .main-div h1 {
