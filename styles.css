@@ -305,7 +305,7 @@ section {
 .contact-img {
   border-radius: 50%;
   border: 5px solid;
-  border-color: rgb(226, 14, 14);
+  border-color: rgb(255, 255, 255);
   transform: scale(0.5);
   overflow: hidden;
   height: 250px;
