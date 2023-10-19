@@ -7,7 +7,7 @@ function showNextLetter() {
     if (index <= text.length) {
         textElement.textContent = text.slice(0, index);
         index++;
-        setTimeout(showNextLetter, 200);
+        setTimeout(showNextLetter, 400);
     } else {
         // Show the login form when the animation is complete
         const intro = document.getElementById('introduction');
@@ -20,34 +20,27 @@ showNextLetter();
 
 
 
-/*function toggleMenu(button) {
-    const textContainer = button.parentElement.querySelector('.text-container');
-    const containerMore = button.parentElement.querySelector('.container-more');
-    const buttonText = button;
-
-    if (textContainer.style.display === "none" || textContainer.style.display === "") {
-        containerMore.style.display = "none";
-        textContainer.style.display = "inline";
-        buttonText.textContent = "Show More";
-    } else {
-        containerMore.style.display = "inline";
-        textContainer.style.display = "none";
-        buttonText.textContent = "Show Less";
-    }
-}*/
-
 function toggleContent(button) {
     const contentId = button.getAttribute("data-toggle");
     const content = document.getElementById(contentId);
+    const containers = document.getElementById("text-container");
+
 
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         button.innerText = "Less";
     } else {
         content.style.display = "none";
+        /*containers.style.display = "none"; /*if you want to  on and off the content */
+        button.innerText = "Less";
+    } else {
+        content.style.display = "none";
+        /*containers.style.display = "block";  /*if you want to  on and off the content  */
         button.innerText = "More";
     }
 }
+
+
 
 
 
